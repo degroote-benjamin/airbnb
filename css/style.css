@@ -45,6 +45,11 @@ header rules
 
 */
 
+header
+{
+  padding-bottom: 15px;
+}
+
 .logo
 {
   width: 25px;
@@ -93,7 +98,7 @@ h2
 
 .per4
 {
-  width:40%;
+  width:47%;
   padding-bottom: 40px;
 }
 
@@ -120,9 +125,14 @@ h2
 h1
 {
   width: 80%;
-  font-size: 22px;
-  line-height: 30px !important;
+  font-family: inherit !important;
+  font-size: 20px !important;
+  line-height: 27px !important;
   letter-spacing: -0.6px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  color: #484848 !important;
+  font-weight: normal; !important;
 }
 
 .red
@@ -188,9 +198,11 @@ h1
 
 button
 {
-  background-color: blue;
+  background-color:#008489;
   color: white;
   padding: 10px;
+  border: 2px solid transparent !important;
+  border-radius: 4px !important;
 }
 
 .revenu
@@ -207,6 +219,7 @@ button
 .left p
 {
   padding-bottom: 20px;
+  font-size: 19px !important;
 }
 
 .right
@@ -271,9 +284,15 @@ footer nav
 
 hr
 {
-  border: 1px solid lightgrey;
+  border:0.5px solid lightgrey;
   width: 80%;
   margin: auto;
+  margin-bottom: 25px;
+}
+
+.inline li
+{
+  display: inline-block;
 }
 /*
 
