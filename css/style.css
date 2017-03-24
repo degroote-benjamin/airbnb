@@ -1,0 +1,225 @@
+/*
+
+common rules
+
+*/
+
+*
+{
+  margin:0;
+  padding: 0;
+}
+
+
+.figlogo, .inputmob , .search, .per5 , .per3 , .h1
+{
+  display: flex;
+}
+
+.figlogo , .h1 , .search , .inputmob
+{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.firstnav
+{
+  display: none;
+}
+
+
+/*
+
+end of common rules
+
+*/
+
+
+
+/*
+
+
+header rules
+
+
+*/
+
+.logo
+{
+  width: 25px;
+  height: 25px;
+}
+
+.figlogo , header aside
+{
+  width: 90px;
+  height: 64px;
+}
+
+.figlogo i
+{
+  width: 9px;
+  height: 12px;
+}
+
+/*
+
+
+end of header rules
+
+
+*/
+
+
+/*
+
+main rules
+
+*/
+
+h2
+{
+  width: 90%;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+}
+
+.per4 img
+{
+  width: 100%;
+  height: auto;
+}
+
+.per4
+{
+  width:40%;
+  padding-bottom: 40px;
+}
+
+.per5
+{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input
+{
+  display: none;
+}
+
+.h1
+{
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 40px;
+  justify-content: space-around;
+}
+
+h1
+{
+  width: 80%;
+  font-size: 22px;
+  line-height: 30px !important;
+  letter-spacing: -0.6px !important;
+}
+
+.red
+{
+  color: red;
+}
+
+.searchmob
+{
+  border: 0;
+  width: 85%;
+}
+
+.inputmob
+{
+  border: 1px solid lightgrey;
+  height: 55px;
+  width: 80%;
+}
+
+.search
+{
+  padding-bottom:55px;
+}
+
+.per4:nth-child(3) , .per4:nth-child(4)
+{
+  display: none;
+}
+
+.per3 img , .per3 figure
+{
+  width: 80%;
+  height: auto;
+}
+
+.per3:nth-child(3) , .per3:nth-child(2)
+{
+  display: none;
+}
+
+.per3 , .per6
+{
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.per6 img , .per6 figure
+{
+  width: 100%;
+  height: auto;
+}
+
+.per6
+{
+  width: 27%;
+}
+
+.per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
+{
+  display: none;
+}
+
+button
+{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+/*
+
+
+end of main rules
+
+
+*/
+
+
+
+
+/*
+
+footer rules
+
+
+*/
+
+
+
+
+
+/*
+
+
+
+end of footer rules
+
+
+
+*/
