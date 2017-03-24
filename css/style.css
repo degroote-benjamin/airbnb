@@ -11,12 +11,12 @@ common rules
 }
 
 
-.figlogo, .inputmob , .search, .per5 , .per3 , .h1
+.figlogo, .inputmob , .search, .per5 , .per3 , .h1, .revenu , .selectlang
 {
   display: flex;
 }
 
-.figlogo , .h1 , .search , .inputmob
+.figlogo , .h1 , .search , .inputmob, .revenu
 {
   justify-content: center;
   align-items: center;
@@ -192,6 +192,40 @@ button
   color: white;
   padding: 10px;
 }
+
+.revenu
+{
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left
+{
+  width: 80%;
+}
+
+.left p
+{
+  padding-bottom: 20px;
+}
+
+.right
+{
+  width: 100%;
+  padding-bottom:25px;
+}
+
+.right img
+{
+  width: 100%;
+  height: auto;
+}
+
+.revenu
+{
+  flex-direction: column-reverse;
+  padding-bottom: 40px;
+}
 /*
 
 
@@ -210,10 +244,37 @@ footer rules
 
 */
 
+footer
+{
+  border-top: 1px solid lightgrey;
+  padding-top: 20px;
+  width: 100%;
+}
 
+.selectlang
+{
+ justify-content: space-around;
+ align-items: center;
+ padding-bottom: 20px;
+}
 
+.lang , .abrev
+{
+  width: 43%;
+  height:50px;
+}
 
+footer nav
+{
+  display: none;
+}
 
+hr
+{
+  border: 1px solid lightgrey;
+  width: 80%;
+  margin: auto;
+}
 /*
 
 
