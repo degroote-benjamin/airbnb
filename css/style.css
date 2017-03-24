@@ -28,7 +28,10 @@ common rules
   display: none;
 }
 
-
+p
+{
+  color:#484848;
+}
 /*
 
 end of common rules
@@ -293,6 +296,8 @@ hr
 .inline li
 {
   display: inline-block;
+  font-size: 14px;
+  margin-left: 4px;
 }
 /*
 
@@ -303,3 +308,22 @@ end of footer rules
 
 
 */
+
+
+
+
+
+/*
+
+
+
+start tablet
+
+
+*/
+
+@media(min-width:768px;)
+{
+
+
+}
