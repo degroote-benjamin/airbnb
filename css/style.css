@@ -11,7 +11,7 @@ common rules
 }
 
 
-.figlogo, .inputmob , .search, .per5 , .per3 , .h1, .revenu , .selectlang
+.figlogo, .inputmob , .search, .per5 , .per3 , .h1, .revenu , .selectlang,.firstnav ul
 {
   display: flex;
 }
@@ -31,6 +31,13 @@ common rules
 p
 {
   color:#484848;
+  font-size: 14px;
+}
+
+header aside , header .firstnav
+{
+  display: inline-flex;
+  vertical-align: middle;
 }
 /*
 
@@ -91,6 +98,9 @@ h2
   width: 90%;
   flex-wrap: wrap;
   padding-bottom: 35px;
+  font-size: 17px;
+  font-weight: normal;
+  color: #484848;
 }
 
 .per4 img
@@ -101,7 +111,7 @@ h2
 
 .per4
 {
-  width:47%;
+  width:44%;
   padding-bottom: 40px;
 }
 
@@ -222,7 +232,12 @@ button
 .left p
 {
   padding-bottom: 20px;
+}
+
+.left h2
+{
   font-size: 19px !important;
+  font-weight: bold;
 }
 
 .right
@@ -299,6 +314,12 @@ hr
   font-size: 14px;
   margin-left: 4px;
 }
+
+.inline , footer p
+{
+  width: 80%;
+  margin: auto;
+}
 /*
 
 
@@ -322,8 +343,606 @@ start tablet
 
 */
 
-@media(min-width:768px;)
+@media(min-width:768px)
 {
 
+  /*
 
+  header
+
+  */
+
+
+  .firstnav
+  {
+    display:block;
+    justify-content: flex-end;
+    width: 85%;
+  }
+
+  .logo
+  {
+    width: 36px;
+    height: 36px;
+  }
+
+  .figlogo , header aside
+  {
+    width: 90px;
+    height: 64px;
+  }
+
+  .figlogo i
+  {
+    display: none;
+  }
+
+  .firstnav ul
+  {
+    list-style-type: none;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+  }
+
+  .firstnav li
+  {
+    font-size: 14px;
+  }
+/*
+
+end header
+
+*/
+
+
+
+/*
+
+
+main
+
+
+*/
+
+.per4 img
+{
+  width: 100%;
+  height: auto;
+}
+
+.per4
+{
+  width:30%;
+  padding-bottom: 40px;
+}
+
+.per5
+{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input
+{
+  display:inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  height: 55px;
+}
+
+.input input
+{
+  border: 0;
+}
+
+.input label
+{
+  width: 100%;
+}
+
+.input .firstinput
+{
+    width: 90%;
+}
+
+.input .secondinput
+{
+    width: 40%;
+    display: inline-block;
+}
+
+.h1
+{
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 40px;
+  justify-content: space-around;
+}
+
+h1
+{
+  width: 90%;
+  font-family: inherit !important;
+  font-size: 40px !important;
+  line-height: 35px !important;
+  letter-spacing: -0.6px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  color: #484848 !important;
+  font-weight: normal; !important;
+}
+
+.red
+{
+  color: red;
+}
+
+.inputmob
+{
+  display: none;
+}
+
+.search
+{
+  width: 95%;
+  margin-left: 3%;
+}
+
+.per4:nth-child(3)
+{
+  display: block;
+}
+
+.per3
+{
+  width: 45%;
+}
+.per3 img , .per3 figure
+{
+  width: 100%;
+  height: auto;
+}
+
+.per3:nth-child(3)
+{
+  display: block;
+}
+
+.per3 , .per6
+{
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.per6 img , .per6 figure
+{
+  width: 100%;
+  height: auto;
+}
+
+.per6
+{
+  width: 23%;
+}
+
+.per6:nth-child(4)
+{
+  display: block;
+}
+
+button
+{
+  background-color:#008489;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent !important;
+  border-radius: 4px !important;
+}
+
+.revenu
+{
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left
+{
+  width:40%;
+  justify-content: space-between;
+}
+
+.left p
+{
+  padding-bottom: 20px;
+}
+
+.left h2
+{
+  font-size: 19px !important;
+  font-weight: bold;
+}
+
+.right
+{
+  width: 47%;
+  padding-bottom:25px;
+}
+
+.right img
+{
+  width: 100%;
+  height: auto;
+}
+
+.revenu
+{
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.recherche
+{
+  display: none;
+}
+
+
+/*
+
+
+
+end of main
+
+
+
+*/
+
+/*
+
+footer rules
+
+
+*/
+
+
+.selectlang
+{
+ flex-direction: column;
+ padding-bottom: 20px;
+ width: 17%;
+ margin-right: 3em;
+ margin-left: 1em;
+}
+
+.lang , .abrev
+{
+  width: 100%;
+  height:50px;
+}
+
+footer nav
+{
+  display: block;
+  width: 24%;
+  list-style-type: none;
+  margin: auto;
+}
+
+footer nav , .selectlang
+{
+  display: inline-flex;
+  vertical-align: top;
+  flex-wrap: wrap;
+}
+
+footer nav ul
+{
+  list-style-type: none;
+  width: 75%;
+}
+
+nav h4
+{
+  padding-bottom: 15px;
+}
+
+nav li
+{
+  font-size: 13px;
+}
+
+hr
+{
+  border:0.5px solid lightgrey;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.inline li
+{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.inline , footer p
+{
+ display: inline-flex;
+}
+
+footer p
+{
+  width: 40%;
+}
+.inline
+{
+  justify-content: flex-end;
+  width: 55%;
+}
+
+/*
+
+
+
+end of footer rules
+
+
+
+*/
+}
+
+
+/*
+
+
+start desktop
+
+
+*/
+
+@media (min-width:1024) {
+  *
+
+  main rules
+
+  */
+
+  h2
+  {
+    width: 90%;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #484848;
+  }
+
+  .per4 img
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .per4
+  {
+    width:44%;
+    padding-bottom: 40px;
+  }
+
+  .per5
+  {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .input
+  {
+    display: none;
+  }
+
+  .h1
+  {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 40px;
+    justify-content: space-around;
+  }
+
+  h1
+  {
+    width: 80%;
+    font-family: inherit !important;
+    font-size: 20px !important;
+    line-height: 27px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #484848 !important;
+    font-weight: normal; !important;
+  }
+
+  .red
+  {
+    color: red;
+  }
+
+  .searchmob
+  {
+    border: 0;
+    width: 85%;
+  }
+
+  .inputmob
+  {
+    border: 1px solid lightgrey;
+    height: 55px;
+    width: 80%;
+  }
+
+  .search
+  {
+    padding-bottom:55px;
+  }
+
+  .per4:nth-child(3) , .per4:nth-child(4)
+  {
+    display: none;
+  }
+
+  .per3 img , .per3 figure
+  {
+    width: 80%;
+    height: auto;
+  }
+
+  .per3:nth-child(3) , .per3:nth-child(2)
+  {
+    display: none;
+  }
+
+  .per3 , .per6
+  {
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+
+  .per6 img , .per6 figure
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .per6
+  {
+    width: 27%;
+  }
+
+  .per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
+  {
+    display: none;
+  }
+
+  button
+  {
+    background-color:#008489;
+    color: white;
+    padding: 10px;
+    border: 2px solid transparent !important;
+    border-radius: 4px !important;
+  }
+
+  .revenu
+  {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .left
+  {
+    width: 80%;
+  }
+
+  .left p
+  {
+    padding-bottom: 20px;
+  }
+
+  .left h2
+  {
+    font-size: 19px !important;
+    font-weight: bold;
+  }
+
+  .right
+  {
+    width: 100%;
+    padding-bottom:25px;
+  }
+
+  .right img
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .revenu
+  {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+  /*
+
+
+  end of main rules
+
+
+  */
+
+
+
+
+  /*
+
+  footer rules
+
+
+  */
+
+  footer
+  {
+    border-top: 1px solid lightgrey;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .selectlang
+  {
+   justify-content: space-around;
+   align-items: center;
+   padding-bottom: 20px;
+  }
+
+  .lang , .abrev
+  {
+    width: 43%;
+    height:50px;
+  }
+
+  footer nav
+  {
+    display: none;
+  }
+
+  hr
+  {
+    border:0.5px solid lightgrey;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .inline li
+  {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  .inline , footer p
+  {
+    width: 80%;
+    margin: auto;
+  }
+  /*
+
+
+
+  end of footer rules
+
+
+
+  */
 }
