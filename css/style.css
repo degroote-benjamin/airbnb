@@ -11,7 +11,7 @@ common rules
 }
 
 
-.figlogo, .inputmob , .search, .per5 , .per3 , .h1, .revenu , .selectlang,.firstnav ul
+.figlogo, .inputmob , .search, .per5 , .per3 , .h1, .revenu , .selectlang
 {
   display: flex;
 }
@@ -34,7 +34,7 @@ p
   font-size: 14px;
 }
 
-header aside , header .firstnav
+header aside
 {
   display: inline-flex;
   vertical-align: middle;
@@ -171,18 +171,13 @@ h1
   padding-bottom:55px;
 }
 
-.per4:nth-child(3) , .per4:nth-child(4)
-{
-  display: none;
-}
-
 .per3 img , .per3 figure
 {
   width: 80%;
   height: auto;
 }
 
-.per3:nth-child(3) , .per3:nth-child(2)
+.per3:nth-child(3) , .per3:nth-child(2) , .per4:nth-child(3) , .per4:nth-child(4) ,.per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
 {
   display: none;
 }
@@ -202,11 +197,6 @@ h1
 .per6
 {
   width: 27%;
-}
-
-.per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
-{
-  display: none;
 }
 
 button
@@ -355,7 +345,7 @@ start tablet
 
   .firstnav
   {
-    display:block;
+    display:inline-flex;
     justify-content: flex-end;
     width: 85%;
   }
@@ -364,12 +354,6 @@ start tablet
   {
     width: 36px;
     height: 36px;
-  }
-
-  .figlogo , header aside
-  {
-    width: 90px;
-    height: 64px;
   }
 
   .figlogo i
@@ -464,14 +448,8 @@ main
 h1
 {
   width: 90%;
-  font-family: inherit !important;
   font-size: 40px !important;
   line-height: 35px !important;
-  letter-spacing: -0.6px !important;
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-  color: #484848 !important;
-  font-weight: normal; !important;
 }
 
 .red
@@ -479,7 +457,7 @@ h1
   color: red;
 }
 
-.inputmob
+.inputmob , .recherche
 {
   display: none;
 }
@@ -490,7 +468,7 @@ h1
   margin-left: 3%;
 }
 
-.per4:nth-child(3)
+.per4:nth-child(3) , .per3:nth-child(3) , .per6:nth-child(4)
 {
   display: block;
 }
@@ -499,16 +477,6 @@ h1
 {
   width: 45%;
 }
-.per3 img , .per3 figure
-{
-  width: 100%;
-  height: auto;
-}
-
-.per3:nth-child(3)
-{
-  display: block;
-}
 
 .per3 , .per6
 {
@@ -516,7 +484,7 @@ h1
   padding-bottom: 40px;
 }
 
-.per6 img , .per6 figure
+.per6 img , .per6 figure , .per3 img , .per3 figure
 {
   width: 100%;
   height: auto;
@@ -525,20 +493,6 @@ h1
 .per6
 {
   width: 23%;
-}
-
-.per6:nth-child(4)
-{
-  display: block;
-}
-
-button
-{
-  background-color:#008489;
-  color: white;
-  padding: 10px;
-  border: 2px solid transparent !important;
-  border-radius: 4px !important;
 }
 
 .revenu
@@ -584,10 +538,12 @@ button
 
 .recherche
 {
-  display: none;
+  padding: 5px;
+  background-color: red;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 4px;
 }
-
-
 /*
 
 
@@ -608,11 +564,11 @@ footer rules
 
 .selectlang
 {
- flex-direction: column;
- padding-bottom: 20px;
- width: 17%;
- margin-right: 3em;
- margin-left: 1em;
+  flex-direction: column;
+  padding-bottom: 20px;
+  width: 17%;
+  margin-right: 3em;
+  margin-left: 1em;
 }
 
 .lang , .abrev
@@ -712,15 +668,16 @@ start desktop
   */
 
 
-.firstnav
-{
-  width: 94%;
-}
+  .firstnav
+  {
+    width: 94%;
+    justify-content: flex-end;
+  }
 
-.firstnav ul
-{
-  width: 23%;
-}
+  .firstnav ul
+  {
+    width: 23%;
+  }
 
 /*
 
@@ -733,37 +690,27 @@ end header
 
   */
 
-.main
-{
-  width: 60%;
-  margin: auto;
-}
+  .main
+  {
+    width: 60%;
+    margin: auto;
+  }
 
-.per4
-{
-  width:23%;
-}
+  .per4
+  {
+    width:23%;
+  }
 
-.recherche
-{
-  display: block;
-}
+  .h1
+  {
+    justify-content: flex-start;
+  }
 
-.h1
-{
-  justify-content: flex-start;
-}
   h1
   {
     width: 50%;
-    font-family: inherit !important;
     font-size: 50px !important;
     line-height: 45px !important;
-    letter-spacing: -0.6px !important;
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
-    color: #484848 !important;
-    font-weight: normal; !important;
   }
 
   .per3
@@ -782,21 +729,10 @@ end header
   }
 
 
-  .per4:nth-child(3) , .per4:nth-child(4)
+ .recherche ,  .per4:nth-child(3) , .per4:nth-child(4) ,  .per3:nth-child(3) , .per3:nth-child(2) ,  .per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
   {
     display: block;
   }
-
-  .per6:nth-child(4),.per6:nth-child(5),.per6:nth-child(6)
-  {
-    display: block;
-  }
-
-  .per3:nth-child(3) , .per3:nth-child(2)
-  {
-    display: block;
-  }
-
 
   /*
 
@@ -819,6 +755,11 @@ end header
   {
     width: 60%;
     margin: auto;
+  }
+
+  footer nav
+  {
+    width: 21%;
   }
   /*
 
