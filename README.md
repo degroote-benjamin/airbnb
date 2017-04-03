@@ -24,6 +24,6 @@
 
 ## Charte graphique
 
-p , h2 et h1 : #484848
-Une partie du h1 en red
-bouton revenu en couleur ( ecriture ) blanc et un background #008489
+- p , h2 et h1 : #484848
+- Une partie du h1 en red
+- bouton revenu en couleur ( ecriture ) blanc et un background #008489
