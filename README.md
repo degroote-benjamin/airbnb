@@ -11,13 +11,12 @@
 ### version tablette 
 
 - Le chevron du logo disparait
-- Toujours pas de nav
+- Une nav
 - Nouvelle barre de recherche
 - 1 destination en plus par ligne
 
 ### version pc
 
-- Une nav
 - Un bouton recherche en plus pour la barre de recherche
 - 1 destination en plus par ligne
 
